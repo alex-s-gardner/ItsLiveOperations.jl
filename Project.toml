@@ -1,0 +1,13 @@
+name = "ItsLiveOperations"
+uuid = "b8e4329f-794d-4689-a8d5-4af5c4f5d8c2"
+authors = ["Alex Gardner <alex.s.gardner@jpl.nasa.gov> and contributors"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1.6.7"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
