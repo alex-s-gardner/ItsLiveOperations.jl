@@ -3,7 +3,9 @@
 testdir = "/Users/gardnera/data/its-live-working/tests/burst_processing";
 
 # install the necessary packages if they are not already installed
-#using Pkg; Pkg.add(["STAC", "CairoMakie", "Downloads", "NCDatasets", "HTTP", "Proj", "GeometryOps", "Extents", "GeoInterface", "Dates", "JSON", "Rasters",  "FileIO"])
+if false
+    using Pkg; Pkg.add(["STAC", "CairoMakie", "Downloads", "NCDatasets", "HTTP", "Proj", "GeometryOps", "Extents", "GeoInterface", "Dates", "JSON", "Rasters",  "FileIO", "GeoInterface", "ArchGDAL", "GeometryOps"])
+end
 
 # import the necessary packages
 begin
