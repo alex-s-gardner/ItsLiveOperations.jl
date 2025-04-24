@@ -1,3 +1,22 @@
+"""
+    autorift_burst_assess.jl
+
+This script assesses AutoRIFT burst processing results by analyzing test JSON files
+containing burst processing information. It downloads and analyzes granules, searches
+for results using the ITS_LIVE STAC API, and generates analysis figures for each granule.
+
+The script compares new granules with existing ones and reference velocity data over stable
+surfaces, creating visualizations to evaluate the quality of the burst processing results.
+
+# Workflow
+1. Reads test JSON files containing burst processing information
+2. Downloads and analyzes granules for each test case
+3. Searches for existing results using the ITS_LIVE STAC API
+4. Compares new granules with existing ones and reference velocity data
+5. Generates analysis figures showing velocity magnitudes and differences
+6. Saves figures for each granule in a designated directory
+"""
+
 # point to the directory containing the test .json files
 
 testdir = "/Users/gardnera/data/its-live-working/tests/burst_processing";
